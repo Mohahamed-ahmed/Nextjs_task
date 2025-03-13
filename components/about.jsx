@@ -7,7 +7,7 @@ function About() {
     <div className="flex gap-[32px]  items-center sm:items-start justify-around">
       <div className="flex flex-col gap-[60px] w-[40%]">
         <div className="flex align-center flex-col gap-[32px]">
-          <h1 className="text-6xl font-bold text-center sm:text-left uppercase text-white tracking-wider">
+          <h1 className="text-6xl font-bold text-center sm:text-left uppercase text-white tracking-wider drop-shadow-[0_0_10px_rgba(255,255,255,0.8])">
             about us
           </h1>
           <TextContainer>
