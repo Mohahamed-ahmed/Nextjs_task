@@ -14,27 +14,45 @@ export default function Home() {
       <section className="py-30">
         <Hero></Hero>
       </section>
+      
       <section className="py-30" id="about">
         <About></About>
       </section>
+      
       <section className="py-30" id="services">
-        <h1 className="text-white text-center text-6xl mb-[100px] drop-shadow-[0_0_10px_rgba(255,255,255,0.8])">Our Services</h1>
+        <h1 className="text-white text-center text-3xl md:text-4xl lg:text-6xl mb-6 md:mb-12 lg:mb-16 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Our Services</h1>
         <Services></Services>
       </section>
+      
       <section className="py-30" id="systems">
-        <h1 className="text-white text-center text-6xl mb-[100px] drop-shadow-[0_0_10px_rgba(255,255,255,0.8])">Educational Systems</h1>
+        <h1 className="text-white text-center text-3xl md:text-4xl lg:text-6xl mb-6 md:mb-12 lg:mb-16 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Educational Systems</h1>
         <Systems></Systems>
       </section>
+      
       <section className="py-30" id="courses">
-        <h1 className="text-white text-center text-6xl mb-[100px] drop-shadow-[0_0_10px_rgba(255,255,255,0.8])">Courses</h1>
+        <h1 className="text-white text-center text-3xl md:text-4xl lg:text-6xl mb-6 md:mb-12 lg:mb-16 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Courses</h1>
         <Courses></Courses>
       </section>
-      <section className="py-50 px-30 mb-50 relative" id="pathways">
-        <Image src={Robot} alt="a robot explain things" className="absolute top-0 left-0 object-cover w-full -z-10"></Image>
+      
+      <div className="h-12 md:h-20 lg:h-32"></div>
+      
+      <section className="py-30 md:py-16 lg:py-24 px-4 md:px-8 relative min-h-[400px] md:min-h-[500px] lg:min-h-[600px]" id="pathways">
+        <div className="absolute top-0 left-0 right-0 bottom-0 -z-10 overflow-hidden">
+          <Image 
+            src={Robot} 
+            alt="a robot explain things" 
+            className="object-cover w-full h-full"
+            priority
+            fill
+          />
+        </div>
         <Pathways></Pathways>
       </section>
-      <section className="py-50 mt-60" id="contact">
-        <h1 className="text-white text-center text-6xl mb-[100px] drop-shadow-[0_0_10px_rgba(255,255,255,0.8])">Contact Us</h1>
+
+      <div className="h-12 md:h-20 lg:h-32"></div>
+      
+      <section className="py-30" id="contact">
+        <h1 className="text-white text-center text-3xl md:text-4xl lg:text-6xl mb-6 md:mb-12 lg:mb-16 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]">Contact Us</h1>
         <ContactUs></ContactUs>
       </section>
     </>
